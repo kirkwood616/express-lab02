@@ -1,0 +1,34 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style.css" />
+		<title>Your Pizza</title>
+	</head>
+	<body>
+		<h1>Your Pizza</h1>
+		<span class="bold">Size: </span>
+		{{size}}
+		<br /><br />
+		<span class="bold">Toppings: </span>
+		{{toppings}}
+		<br /><br />
+		<span class="bold">Gluten-Free Crust: </span>
+		{{gluten}}
+		<br /><br />
+		<span class="bold">Special Instructions: </span>
+		{{instructions}}
+		<br /><br />
+		<span class="bold">Price: </span>${{price}}
+		<br /><br />
+		{{#if freeDelivery}}
+			<div id="freeDeliver">
+				<span class="free">Because your order meets the $15.00 minimum, you get
+					FREE DELIVERY!</span>
+			</div>
+			<br />
+		{{/if}}
+		<a href="/">Back to Homepage</a>
+	</body>
+</html>

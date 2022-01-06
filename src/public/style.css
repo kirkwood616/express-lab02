@@ -1,0 +1,17 @@
+body {
+	background-color: silver;
+}
+
+a {
+	color: blue;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#image {
+	height: 100px;
+	display: block;
+	margin: 25px 0;
+}
