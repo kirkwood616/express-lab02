@@ -7,33 +7,35 @@
 		<title>Build Your Own Pizza</title>
 	</head>
 	<body>
-		<h1>Build Your Own Pizza</h1>
-		<form action="/build-results" method="POST">
-			<span class="bold">Size: </span>
-			<select name="sizes" id="size">
-				<option name="size" value="Large">Large</option>
-				<option name="size" value="Medium">Medium</option>
-				<option name="size" value="Small">Small</option>
-			</select><br />
-			<span class="bold">Choose Your Toppings:</span><input
-				name="toppings"
-				type="number"
-				min="0"
-				max="10"
-			/><br />
-			<ul>
-				{{#each toppings}}
-					<li>{{this}}</li>
-				{{/each}}
-			</ul>
-			<br />
-			<input type="checkbox" name="gluten" /><span class="bold">Gluten Free
-				Crust?
-			</span>(+ $2.00 extra)
-			<br />
-			<span class="bold">Special Instructions (Optional)</span>
-			<input name="instructions" type="text" />
-			<input type="submit" />
-		</form>
+		<div id="container">
+			<h1>Build Your Own Pizza</h1>
+			<form action="/build-results" method="POST">
+				<span class="bold">Size: </span>
+				<select name="sizes" id="size">
+					<option name="size" value="Large">Large</option>
+					<option name="size" value="Medium">Medium</option>
+					<option name="size" value="Small">Small</option>
+				</select><br />
+				<span class="bold">Choose Your Toppings:</span><input
+					name="toppings"
+					type="number"
+					min="0"
+					max="10"
+				/><br />
+				<ul>
+					{{#each toppings}}
+						<li>{{this}}</li>
+					{{/each}}
+				</ul>
+				<br />
+				<input type="checkbox" name="gluten" /><span class="bold">Gluten Free
+					Crust?
+				</span>(+ $2.00 extra)
+				<br /><br />
+				<span class="bold">Special Instructions (Optional)</span><br />
+				<textarea name="instructions" type="text" rows="5"></textarea><br />
+				<input type="submit" />
+			</form>
+		</div>
 	</body>
 </html>

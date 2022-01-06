@@ -1,5 +1,4 @@
 import express from "express";
-import Pizzas from "../models/Pizzas";
 
 const pizzaRoutes = express.Router();
 
@@ -51,9 +50,9 @@ pizzaRoutes.post("/build-results", function (req, res) {
 	let price: number = 0;
 	let freeDelivery: boolean = false;
 
-	if (size === "Large") price += 12 + toppings * 0.5;
+	if (size === "Large") price += 12 + toppings * 1.25;
 	if (size === "Medium") price += 10 + toppings * 1;
-	if (size === "Small") price += 7 + toppings * 1.25;
+	if (size === "Small") price += 7 + toppings * 0.5;
 	if (gluten) price += 2;
 	if (price >= 15) freeDelivery = true;
 

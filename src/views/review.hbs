@@ -7,20 +7,24 @@
 		<title>Review</title>
 	</head>
 	<body>
-		<h1>Leave a Review</h1>
-		<form action="/results" method="POST">
-			<span class="bold">Your Name</span>
-			<input name="name" type="text" />
-			<span class="bold">Comment</span>
-			<input name="comment" type="text" />
-			<h4>Rating</h4>
-			<input name="rating" type="radio" value="5" /><span class="bold">5 (best)
-				-</span>
-			<input name="rating" type="radio" value="4" /><span class="bold">4 -</span>
-			<input name="rating" type="radio" value="3" /><span class="bold">3 -</span>
-			<input name="rating" type="radio" value="2" /><span class="bold">2 -</span>
-			<input name="rating" type="radio" value="1" /><span class="bold">1 (worst)</span>
-			<input type="submit" /><input type="reset" value="Reset" />
-		</form>
+		<div id="container">
+			<h1>Leave a Review</h1>
+			<form action="/results" method="POST">
+				<span class="bold">Your Name</span>
+				<input name="name" type="text" />
+				<br /><br />
+				<span class="bold">Comment</span><br />
+				<input name="comment" type="text" id="comment" />
+				<h4>Rating</h4>
+				<input name="rating" type="radio" value="5" /><span class="bold">5
+					(best) -</span>
+				<input name="rating" type="radio" value="4" /><span class="bold">4 -</span>
+				<input name="rating" type="radio" value="3" /><span class="bold">3 -</span>
+				<input name="rating" type="radio" value="2" /><span class="bold">2 -</span>
+				<input name="rating" type="radio" value="1" /><span class="bold">1
+					(worst)</span>
+				<input type="submit" /><input type="reset" value="Reset" />
+			</form>
+		</div>
 	</body>
 </html>
