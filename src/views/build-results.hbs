@@ -16,7 +16,11 @@
 			{{toppings}}
 			<br /><br />
 			<span class="bold">Gluten-Free Crust: </span>
-			{{gluten}}
+			{{#if gluten}}
+				Yes
+			{{else}}
+				No
+			{{/if}}
 			<br /><br />
 			<span class="bold">Special Instructions: </span>
 			{{instructions}}
